@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Employee Salary Details");
+        var emname=prompt("Enter Employee Name");
+        console.log("Emplpoyee Name :"+emname);
+        var gender=prompt("Enter Gender");
+        console.log("Employee Gender :"+gender)
+        var emage=prompt("Enter Amployee Age");
+        console.log("Enter Employee Age :"+emage);
+        var emdpt=prompt("Enter Employee Department");
+        console.log("Employee Department :"+emdpt);
+        var totalsalary=prompt("Enter Total Salary");
+        totalsalary=parseInt(totalsalary);
+        console.log("Total Salary :"+totalsalary);
+        var totaltaxtobepaid,taxpercent=0;
+        if(gender=="male"){
+            if(total>=100000){
+                taxpercent=15;                
+            }
+        }
+        else if(totalsalary>=50000){
+            taxpercent=10;
+        }
+        else if(totalsalary>=25000){
+            taxpercent=5;
+        }
+        else { female 
+            if (totalsalary>=100000){
+                taxpercent=10;
+            }
+            if(totalsalary>=50000){
+                taxpercent=5;
+            }
+            if(totalsalary>=25000){
+                taxpercent=0;
+            }
+        }
+        totaltaxtobepaid=(totalsalary*taxpercent)/100
+        console.log("TOtaL Tax :"+totaltaxtobepaid)
+        
+
+    </script>
+</body>
+</html>

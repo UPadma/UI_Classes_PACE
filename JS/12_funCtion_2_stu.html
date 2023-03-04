@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            console.log("*** Sudent Details***")
+            var stuname, sturage, gender, stuclass, m1, m2, m3, total, avg;
+            function readstudentdata() {
+                stuname = prompt("Enter Student Name")
+                sturage = prompt("Enter Student Age")
+                gender = prompt("ENter Student Gender")
+                stuclass = prompt("Enter Student Class")
+                m1 = prompt("ENter M1 Marks")
+                m1=parseInt(m1)
+                m2 = prompt("ENter M2 MArks")
+                m2=parseInt(m2)
+                m3 = prompt("ENter M3 Marks")
+                m3=parseInt(m3)
+            }
+            function gettotalandavg(){
+                total=m1+m2+m3
+                avg=total/3
+            }
+            function displaystudentdetails(){
+                console.log("Student Name :"+stuname)
+                console.log("Student Age :"+sturage)
+                console.log("Student Gender :"+gender)
+                console.log("Student Total Marks :"+total)
+                console.log("Student Average :"+avg)
+            }
+            function studentgrade(){
+                if(avg>=40){
+                    console.log("Student Passed")
+                }else if(avg>=90){
+                    console.log("Distintion")
+                }else if(avg>=60){
+                    console.log("First Class")
+                }else{
+                    console.log("Second Class")
+                }
+            }
+            readstudentdata();
+            gettotalandavg();
+            displaystudentdetails();
+            studentgrade();
+
+        </script>
+    </body>
+
+    </html>

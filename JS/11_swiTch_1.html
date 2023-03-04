@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var p1 = prompt("Enter First number")
+        p1 = parseInt(p1)
+        var p2 = prompt("Enter Second number")
+        p2 = parseInt(p2)
+        var userselection = prompt("Enter Add/Sub/Mul/Div")
+        switch (userselection) {
+            case 'add':
+                var sum = p1 + p2
+                console.log("The Sum Is :" + sum)
+                break;
+            case 'sub':
+                var sub = p1 - p2
+                console.log("The Subtraction is :" + sub)
+                break;
+            case 'mul':
+                var mul = p1 * p2
+                console.log("The Multification :" + mul)
+                break;
+            case 'div':
+                var div = p1 / p2
+                console.log('The Div :' + div)
+                break;
+            default:
+                console.log("It Is Wrong Option")
+        }
+    </script>
+</body>
+
+</html>

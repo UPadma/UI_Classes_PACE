@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter Any Number");
+        n=parseInt(n)
+        var sumofno=0;
+        while(n>0){
+            var rem=n%10;
+            sumofno=rem;
+            n=n/10;
+            n=parseInt(n)
+            if(n==0 && sumofno>9){
+                n=sumofno
+                sumofno=0
+            }
+        }
+        console.log("Lucky No Is :"+sumofno)
+    </script>
+</body>
+</html>

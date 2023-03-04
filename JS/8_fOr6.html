@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=prompt("enter any no : ");
+        n=parseInt(n);
+        count=0;
+        for(var i=1;i<=n;i++){
+            rem=n%i;
+            if(rem==0){
+                count++;
+            }
+            console.log(rem)
+        }
+        if(count==2){
+            console.log("Prime no")
+        }else {
+            console.log("Not prime")
+        }
+       
+    </script>
+</body>
+</html>

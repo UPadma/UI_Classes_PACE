@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("*****Student Marks List*****");
+        var stuname=prompt("ENter Student Name ");
+        console.log("Student Name :"+stuname);
+        var stuclass=prompt("Enter Student Class");
+        console.log("Sudent Class :"+stuclass);
+        var emarks=prompt("Enter English Marks");
+        emarks=parseInt(emarks);
+        console.log("English Marks"+emarks);
+        var hmarks=prompt("Enter Hindhi MArks");
+        hmarks=parseInt(hmarks);
+        console.log("Hindhi Marks :"+hmarks);
+        var mmarks=prompt("ENter Maths Marks");
+        mmarks=parseInt(mmarks);
+        console.log("Maths Marks :"+mmarks);
+        var totalmarks=emarks+hmarks+mmarks;
+        console.log("Total marks :"+totalmarks)
+        avg=totalmarks/3
+        console.log("Average :"+avg)
+
+        if(avg>=90){
+            console.log("A Grade")
+        }else if(avg>60){
+            console.log("B Grade")
+        }else if(avg>=35){
+            console.log("Pass")
+        }
+
+
+    </script>
+</body>
+</html>
