@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    console.log("***_Employee Details_***")
+    var empname,empage,empgender,basicsal,totalsal,pf,hra,totaltax
+    function reademployeedatils() {
+        empname=prompt("Enter Employee Name")
+        empage=prompt("Enter EMployee Age")
+        empgender=prompt("Enter EMployee GEnder")
+        basicsal=prompt("Enter Basic Salary")
+        basicsal=parseInt(basicsal)
+    }
+    function calpfhra(){
+        pf=(14*basicsal)/100
+        hra=(25*basicsal)/100
+        totalsal=pf+hra+basicsal
+    }
+    function caltotaltax(){
+        if(empgender=="male"){
+            if(totalsal==3,00,000){
+                taxpercent=10
+            }else{
+                taxpercent=5
+            }
+        }else{
+            if(totalsal==3,00,000){
+                taxpercent=5
+            }else{
+                taxpercent=0
+            }
+            totaltax=(totalsal+taxpercent)/100
+        }
+    }
+    function displayemployeedetails(){
+        console.log("Employee Name :"+empname)
+        console.log("Employee Gender :"+empgender)
+        console.log("EMployee Age :"+empage)
+        console.log("Total Salary :"+totalsal)
+        console.log("Total Tax :"+totaltax)
+    }
+    reademployeedatils();
+    calpfhra();
+    caltotaltax();
+    displayemployeedetails();
+
+   </script> 
+</body>
+</html>
