@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addvalues(){
+            console.log(arguments)
+            var result=0
+            for(var i=0;i<arguments.length;i++){
+                result+=arguments[i]
+                
+            }
+            console.log("The Sum is :"+result)
+        }
+        addvalues(10,20);
+        addvalues(40,50,60,70);
+
+    </script>
+</body>
+</html>
