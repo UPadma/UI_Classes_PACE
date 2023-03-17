@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentdata={
+            name:'',
+            age :'',
+            getstudentdetails:function(){
+                this.name=prompt("Enter Name")
+                this.age=prompt("ENter Age")
+                this.getdetails();
+
+            },
+            getdetails:function(){
+                console.log(studentdata)
+                console.log("Student Name :"+this.name)
+                console.log("Age :"+this.age)
+            }
+        };
+        studentdata.getstudentdetails();
+
+    </script>
+</body>
+</html>

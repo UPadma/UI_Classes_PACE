@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var studentdata={
+            name:' ',
+            age :' ',
+            studentdata:function(){
+                studentdata.name=prompt("Enter Name"),
+                studentdata.age=prompt("Enter Age"),
+                studentdata.marks=[]
+                for(var i=0;i<5;i++){
+                    studentdata.marks[i]=prompt("Enter  marks value of sub"+i)
+                    studentdata.marks[i]=parseInt(studentdata.marks[i])
+                    studentdata.gettotalandavg();
+                }               
+            },
+            gettotalandavg:function(){
+                studentdata.total=0
+                for(var i=0;i<5;i++){
+                    studentdata.total=studentdata.marks[i]+studentdata.total
+                }
+                studentdata.avg=studentdata.total/studentdata.marks.length
+                studentdata.getgrade();
+
+            },
+            getgrade:function(){
+                if(studentdata.avg>=40){
+                    studentdata.grade='passed'
+                }else{
+                    studentdata.grade='failed'
+                }
+                studentdata.displaydetails();
+            },
+            displaydetails:function(){
+                console.log(studentdata)
+                console.log("Student Name :"+studentdata.name)
+                console.log("Student Age :"+age)
+                console.log("studen Total Marks :"+studentdata.total)
+                console.log("Studendt Averege :"+studentdata.avg)
+                console.log("Student Grade :"+studentdata.grade)
+            }
+        };
+        studentdata.studentdata();
+    </script>
+</body>
+</html>
