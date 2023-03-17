@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc"></div>
+    <script>
+        var elementname=prompt("Enter Tag name")
+        var msg=prompt("Enter Msg")
+        var element=document.createElement(elementname)
+        element.innerHTML=msg
+        var whatid=prompt("Enter Id Name")
+        element.setAttribute("id","whatid")
+        element.style.color="red"
+        element.style.border="2px solid blue"
+        element.style.width="150px"
+        element.style.height="150px"
+        element.style.backgroundColor="aqua"
+        console.log(element)
+ 
+        document.querySelector("#abc").append(element)
+
+    </script>
+</body>
+</html>

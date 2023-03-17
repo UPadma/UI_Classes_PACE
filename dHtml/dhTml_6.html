@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wellcome to Pace Computers</h1>
+    <div id="container"></div>
+    <script>
+        var ename=prompt("Enter Element Name")
+        var msg=("Enter Msg")
+        var name=document.createElement(ename)
+        name.innerHTMl=msg
+        name.whatid=prompt("Enter Id")
+        name.setAttribute=("id","name")
+        name.style.color="darkred"
+        name.style.border="2px solid blue"
+
+        document.querySelector("#container").append(name)
+        
+    </script>
+</body>
+</html>

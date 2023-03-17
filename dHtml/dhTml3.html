@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WellCome to the Pace</h1>
+
+    <div id="container"></div>
+
+    <script>
+        var spanele=document.createElement("span")
+        var msg="Hello ..... good Morning"
+        spanele.innerHTML=msg
+        spanele.setAttribute("id","test")
+        spanele.setAttribute("class","name")
+        spanele.setAttribute("name","xyz")
+        spanele.style.color="darkgreen"
+        spanele.style.border="3px solid blue"
+        spanele.style.fontSize="20px"
+        spanele.style.padding="10px"
+        spanele.style.backgroundColor="gold"
+        
+        document.querySelector("#container").append(spanele)
+
+        console.log(spanele)
+    </script>
+</body>
+</html>

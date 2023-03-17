@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wellcome to Pace</h1>
+    <div id="asd"></div>
+
+    <script>
+        var divelename=prompt("Enter tag Name")
+        var msg=prompt("Enter Msg")
+        var element=document.createElement(divelename)
+        element.innerHTML=msg
+        var whatid=prompt("Enter id name") 
+        element.setAttribute("id","whatid")
+        element.style.color="white"
+        element.style.border="2px solid blue"
+        element.style.borderRadius="1900px"
+        element.style.height="550px"
+        element.style.width="550px"
+        element.style.backgroundColor="skyblue"
+        element.style.margin="auto"
+        element.style.textAlign="center"
+        element.style.fontSize="30px"
+        element.style.fontFamily="cursive"
+        console.log(element)
+        document.querySelector("#asd").append(element)
+    </script>
+</body>
+</html>

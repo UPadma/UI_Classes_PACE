@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DHTML Classes </h1>
+    <div id="content"></div>
+    <script>
+        var divele=document.createElement("div")
+        console.log(divele)
+        var msg="Good Evening well come to DHTML classes"
+        divele.innerHTML=msg
+        divele.setAttribute("id","test")
+        divele.setAttribute("class","name")
+        divele.setAttribute("name","abc")
+        divele.style.color="red"
+        divele.style.border="2px solid blue"
+        divele.style.height="400px"
+        divele.style.width="45%"
+        divele.style.backgroundColor="aqua"
+        divele.style.fontFamily="cursive"
+        divele.style.textAlign="center"
+        document.querySelector("#content").append(divele)
+    </script>
+
+</body>
+</html>
