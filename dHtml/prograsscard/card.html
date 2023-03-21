@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js"></script>
+</head>
+<body>
+    <h3>Student Progress Card</h3>
+    <ul class="formcontainer">
+        <li>
+            Student Name : <input type="text" id="sname">
+        </li>
+        <li>
+            Class : 
+            <select id="sclass">
+                <option> Class X </option>
+                <option> Class IX </option>
+                <option> Class VIII </option>
+                <option> Class VII </option>
+            </select>
+        </li>
+        <li>
+            Gender :
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </li>
+        <li class="markscontainer">
+            Marks :
+            <input type="text" id="m1">
+            <input type="text" id="m2">
+            <input type="text" id="m3">
+            <input type="text" id="m4">
+            <input type="text" id="m5">
+        </li>
+        <li>
+            <input type="button" value="Genarate Prograss Card" class="btn" onclick="readuserdata()">
+        </li>
+    </ul>
+    <!-- ******** -->
+    <ul class="progarsscardblock">
+        <li class="prograsstitle">
+            Student Progress card
+        </li>
+        <li>
+            Student Name is : <span id="dname"></span>
+        </li>
+        <li>
+            Student Gender is : <span id="dgender"></span>
+        </li>
+        <li >
+            Student Class is : <span id="dclass"></span>
+        </li>
+        <li>
+            Student Total Marks Is : <span id="dtotal"></span>
+        </li>
+        <li>
+            Student Average is : <span id="davg"></span>
+        </li>
+        <li>
+            Student Grade is : <span id="dgrade"></span>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

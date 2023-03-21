@@ -1,0 +1,44 @@
+h3{
+    text-align: center;
+    border: 1px solid blue;
+    background-color: aquamarine;
+}
+ul{
+    border: 2px solid;
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: bisque;
+}
+li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+.markscontainer>input{
+    width: 60px;
+}
+.formcontainer>li{
+    border: 1px solid #ccc;
+}
+
+
+
+.progarsscardblock{
+    display: none;
+}
+.progarsscardblock>li{
+    border-bottom: 2px dotted brown;
+}
+.prograsstitle{
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+.btn{
+    border-radius: 20px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
