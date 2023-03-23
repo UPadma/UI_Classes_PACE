@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valid.css">
+    <script src="valid.js"></script>
+</head>
+<body>
+    <h3>Validation Form</h3>
+    <ul>
+        <li>
+            ENter First Number
+            <input type="text" id="fval" maxlength="3" onkeypress="return userinput(event)">
+            <span class="tx">*</span><br>
+            <span id="dt" class="tx"></span>
+        </li>
+        <li>
+            Enter Second Number:
+            <input type="text" id="sval" maxlength="3" onkeypress="return userinput(event)">
+        </li>
+        <li>
+            <input type="button" value="Result" onclick="getsum()" >
+
+        </li>
+        <li>
+            Result Is :<span id="result"></span>
+        </li>
+    </ul>
+</body>
+</html>
