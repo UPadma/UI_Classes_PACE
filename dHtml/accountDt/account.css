@@ -1,0 +1,27 @@
+h3{
+    font-size: 30px;
+    border: 2px solid darkblue;
+    text-align: center;
+    color: blue;
+    padding: 5px;
+    width: 500px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+li{
+    list-style: none;
+}
+ul{
+    border: 2px solid darkblue;
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+}
+ul>li{
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #ccc;
+}
+.dn{
+    font-size: 12px;
+}

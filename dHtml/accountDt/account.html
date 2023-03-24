@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="account.css">
+        <script src="account.js"></script>
+    </head>
+    <body>
+        <h3>Account Details</h3>
+        <form action="">
+            <ul>
+            <li>
+                Enter AccountHolder Name : 
+                <input type="text" id="acname" onkeypress="return validation(event)" >
+                <span style="color: red;"></span> <br>
+                <span id="dt" class="dn"></span>
+            </li>
+            <li>
+                Enter Account Number :
+                <input type="text" id="acnum" onkeypress="return validationnum(event)" maxlength="11">
+                <span id="dtt" class="dn"></span> <br>
+                <span id="dtt" class="dn"></span>
+            </li>
+            <li>
+                Enter Password :
+                <input type="text" id="ps" onkeypress="return validationpass(event)" maxlength="8">
+                 <br>
+                <span  id="dtn" class="dn"></span>
+                <span  id="dtn"></span>
+            </li>
+            <li>
+                <input type="button" value="Submit" onclick="dosubmit()">
+            </li>
+            <li>
+            <input type="reset" >
+            </li>
+            </ul>
+        </form>
+    </body>
+    </html>
