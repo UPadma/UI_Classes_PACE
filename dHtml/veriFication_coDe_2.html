@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            margin-left:40%;
+            font-size: 20px;
+            border: 1px solid darkblue;
+            height: 300px;
+            width: 25%;
+            text-align: center;    
+            background-color: rgb(182, 243, 223);        
+        }
+        h3{
+            margin-left: 49%;
+            font-size: 20px;
+            color: darkred;
+        }
+        
+    </style>
+    <script>
+        function bodyload(){
+            var a=Math.random()*10;
+            var b=Math.random()*10;
+            var c=Math.random()*10;
+            var d=Math.random()*10;
+            var e=Math.random()*10;
+            var f=Math.random()*10;
+            var code=Math.round(a)+' '+Math.round(b)+' '+Math.round(c)+' '+Math.round(d)+' '+Math.round(e)+' '+Math.round(f)
+            document.getElementById("code").innerHTML=code
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <h3>User Login</h3>
+    <div>
+        <dl>
+            <dt>User Name</dt>
+            <dd><input type="text"></dd>
+            <dt>Password</dt>
+            <dd><input type="password"></dd>
+            <dt>Verification Code</dt>
+            <dd id="code"></dd>
+        </dl> <br>
+        <button>Login</button>
+    </div>
+</body>
+
+</html>
